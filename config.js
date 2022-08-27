@@ -1,102 +1,47 @@
-let fs = require('fs') 
+let fs = require('fs')
 let chalk = require('chalk')
 
-owner = [
-  ['62895330379186'],
-  ['62895330379186'],
-  ['62895330379186', 'Owner', true]
-  // [number, dia creator/owner?, dia developer?]
-] // Put your number here
-mods = [] // Want some help?
-prems = [] // Premium user has unlimited limit
-APIs = { // API Prefix
-  // name: 'https://website'
+global.owner = ['6283893144467'] // Letakan nomor kamu disini
+
+global.APIs = { // API Prefix
+  // nama: 'https://website'
+  amel: 'https://melcanz.com',
+  bx: 'https://bx-hunter.herokuapp.com',
+  rey: 'https://api.reysekha.my.id',
+  dhnjing: 'https://dhnjing.xyz',
+  hardianto: 'https://hardianto.xyz',
+  neoxr: 'https://api.neoxr.eu.org',
   nrtm: 'https://nurutomo.herokuapp.com',
+  pencarikode: 'https://api.chipa.xyz',
+  waifupics: 'https://api.waifu.pics',
   xteam: 'https://api.xteam.xyz',
-  zahir: 'https://zahirr-web.herokuapp.com',
-  bcil: 'https://75.119.137.248:21587',
-  neoxr: 'https://api.neoxr.eu.org/',
   zeks: 'https://api.zeks.me',
-  gimez: 'https://masgimenz.my.id/',
-  melcanz: 'https://melcanz.com',
-  pencarikode: 'https://pencarikode.xyz',
-  LeysCoder: 'https://leyscoders-api.herokuapp.com',
-  restapi: 'https://x-restapi.herokuapp.com'
 }
-APIKeys = { // APIKey Here
+global.APIKeys = { // APIKey nya disini
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'apikeyaine',
-  'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.neoxr.eu.org/': 'jVEMyB2ITJ',
-  'https://api.zeks.me': 'apikeyaine',
-  'https://pencarikode.xyz': 'pais',
-  'https://melcanz.com': 'ZZBk7EBb',
-  'https://leyscoders-api.herokuapp.com': 'dappakntlll',
-  'https://x-restapi.herokuapp.com': 'BETA'
+  'https://melcanz.com': 'trial',
+  'https://api.reysekha.my.id': 'apirey',
+  'https://bx-hunter.herokuapp.com': 'Ikyy69',
+  'https://hardianto.xyz': 'hardianto',
+  'https://api.neoxr.eu.org': 'yntkts',
+  'https://api.chipa.xyz': 'pais',
+  'https://api.xteam.xyz': 'apikeymu',
+  'https://api.zeks.me': 'apivinz',
 }
-
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
-
-const spack = fs.readFileSync("lib/exif.json")
-const stickerpack = JSON.parse(spack)
-if (stickerpack.spackname == '') {
-  var sticker_name = '@ainee_bot'
-  var sticker_author = 'Aine'
-} else {
-  var sticker_name = stickerpack.spackname
-  var sticker_author = stickerpack.sauthor
-}
-
-const file_exif = "lib/exif.json"
-fs.watchFile(file_exif, () => {
-  fs.unwatchFile(file_exif)
-  console.log(chalk.redBright("Update 'exif.json'"))
-  delete require.cache[file_exif]
-  require('./lib/exif.json')
-})
 
 // Sticker WM
-packname = sticker_name
-author = sticker_author
-wm = '© Aine'
+global.packname = 'TayoBotz'
+global.author = 'K'
 
-Intervalmsg = 1800 //detik
+global.wm = '© Tayo the little Bus'
+global.wait = '_*tunggu sedang diproses...*_'
+global.eror = '_*Server Error*_'
+global.benar = '✅'
+global.salah = '❌'
+global.dikit = 'dikit lagi'
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text='
 
-multiplier = 1000 // The higher, The harder levelup
-
-rpg = {
-  emoticon(string) {
-    string = string.toLowerCase()
-    let emot = {
-      exp: '✉️',
-      money: '💵',
-      potion: '🥤',
-      diamond: '💎',
-      common: '📦',
-      uncommon: '🎁',
-      mythic: '🗳️',
-      legendary: '🗃️',
-      pet: '🎁',
-      trash: '🗑',
-      armor: '🥼',
-      sword: '⚔️',
-      wood: '🪵',
-      rock: '🪨',
-      string: '🕸️',
-      horse: '🐎',
-      cat: '🐈' ,
-      dog: '🐕',
-      fox: '🦊',
-      petFood: '🍖',
-      iron: '⛓️',
-      gold: '👑',
-      emerald: '💚'
-    }
-    let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
-    if (!results.length) return ''
-    else return emot[results[0][0]]
-  }
-}
+global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
