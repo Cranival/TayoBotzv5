@@ -1,4 +1,4 @@
-# wabot-aq
+# TayoBotz
 
 Simple WhatsApp Bot
 
@@ -170,6 +170,5 @@ jadibot: false,
 Powered by XTEAM | Author / Creator | Most Active Contributor | 2nd Most Active Contributor
 
 
-NOTE: This project will not maintained after `27 June 2021`, that means no update. Feel free to anyone to continue this project :)
-
-Best Regards. wabot-aq
+NOTE: im only recode 
+thanks for Narutomo 
