@@ -170,5 +170,5 @@ jadibot: false,
 Powered by XTEAM | Author / Creator | Most Active Contributor | 2nd Most Active Contributor
 
 
-NOTE: im only recode 
-thanks for Narutomo 
+NOTE: im only recode and
+thanks for Nurutomo 
