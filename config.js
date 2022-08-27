@@ -19,14 +19,14 @@ global.APIs = { // API Prefix
 }
 global.APIKeys = { // APIKey nya disini
   // 'https://website': 'apikey'
-  'https://melcanz.com': 'trial',
-  'https://api.reysekha.my.id': 'apirey',
-  'https://bx-hunter.herokuapp.com': 'Ikyy69',
-  'https://hardianto.xyz': 'hardianto',
-  'https://api.neoxr.eu.org': 'yntkts',
-  'https://api.chipa.xyz': 'pais',
-  'https://api.xteam.xyz': 'apikeymu',
-  'https://api.zeks.me': 'apivinz',
+  'https://melcanz.com': 'ZZBk7EBb',
+  'https://x-restapi.herokuapp.com': 'BETA',
+  'https://bx-hunter.herokuapp.com': 'zahirgans',
+  'https://leyscoders-api.herokuapp.com': 'dappakntlll',
+  'https://api.neoxr.eu.org': 'jVEMyB2ITJ',
+  'https://pencarikode.xyz': 'pais',
+  'https://api.xteam.xyz': 'apikeyaine',
+  'https://api.zeks.me': 'apikeyaine',
 }
 
 // Sticker WM
